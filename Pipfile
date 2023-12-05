@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+langchain = "*"
+unstructured = "*"
+chromadb = "*"
+openai = "*"
+tiktoken = "*"
+python-dotenv = "*"
+pypdf2 = "*"
+pypdf = "*"
+flask = "*"
+minio = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
