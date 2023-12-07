@@ -23,8 +23,8 @@ def knowledge():
 def question():
     data = json.loads(request.data)
     question = data['question']
-    answer = query.question(question=question)
-
+    #answer = query.question(question=question)
+    answer = query.conversational_chat(question=question)
     return make_response(jsonify(answer), 200)
 
 
