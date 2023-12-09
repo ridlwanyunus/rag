@@ -44,5 +44,6 @@ def qa_memory() -> any:
 
     return qa, memory
 
+
 def clear_memory() -> any:
     memory.clear()

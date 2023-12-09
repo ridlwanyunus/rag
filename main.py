@@ -24,7 +24,8 @@ def question():
     data = json.loads(request.data)
     question = data['question']
     qa, memory = retirevalqa.qa_memory()
-    answer = query.conversational_chat_with_memory(qa=qa,question=question, memory=memory)
+    # answer = query.conversational_chat_with_memory(qa=qa,question=question, memory=memory)
+    answer = query.conversational_chat_with_react(question=question, memory=memory)
     return make_response(jsonify(answer), 200)
 
 @app.route('/refresh', methods=['GET'])
