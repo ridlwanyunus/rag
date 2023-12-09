@@ -52,7 +52,7 @@ def conversational_chat_with_react(question: str, memory: ConversationBufferMemo
     llm_chain = LLMChain(llm=OpenAI(temperature=0), prompt=prompt)
     agent = ZeroShotAgent(llm_chain=llm_chain, tools=tools, verbose=True)
     agent_chain = AgentExecutor.from_agent_and_tools(
-        agent=agent, tools=tools, verbose=True, memory=memory
+        agent=agent, tools=tools, verbose=True, memory=memory, handle_parsing_errors=True
     )
 
     result = agent_chain.run(input=question)
