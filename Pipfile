@@ -15,6 +15,7 @@ pypdf = "*"
 flask = "*"
 minio = "*"
 numexpr = "*"
+gunicorn = "*"
 
 [dev-packages]
 
