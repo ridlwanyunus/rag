@@ -21,7 +21,7 @@ def conversational_chat_with_react(question: str, memory: ConversationBufferMemo
 
     {chat_history}
     Question: {input}
-    {agent_scratchpad}
+    Thought: {agent_scratchpad}
     Answer in Bahasa Indonesia
     """
 
