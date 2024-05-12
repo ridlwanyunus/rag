@@ -1,7 +1,7 @@
 from langchain.chains import LLMChain
 from langchain.memory import ConversationBufferMemory
 from langchain.chains.conversational_retrieval.base import BaseConversationalRetrievalChain
-from langchain.llms import OpenAI
+from langchain_community.llms import OpenAI
 from langchain.agents import AgentExecutor, load_tools, ZeroShotAgent
 
 from dotenv import load_dotenv

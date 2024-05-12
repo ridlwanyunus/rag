@@ -35,9 +35,7 @@ def refresh():
     return make_response(jsonify("Chat history has been cleared"), 200)
 
 def main():
-    app.run(debug=True, host='0.0.0.0', port=8080)
-
-
+    app.run(debug=True, host='0.0.0.0', port=5000)
 
 if __name__ == '__main__':
     main()
