@@ -19,9 +19,10 @@ def conversational_chat_with_react(question: str, memory: ConversationBufferMemo
     prefix = """Have a conversation with a human, answering the following questions as best you can. You have access to the following tools:"""
     suffix = """Begin!"
 
-    {chat_history}
+
     Question: {input}
     Thought: {agent_scratchpad}
+
     Answer in Bahasa Indonesia
     """
 
